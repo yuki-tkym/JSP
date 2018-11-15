@@ -219,4 +219,32 @@
     <servlet-name>ShowSample24a</servlet-name>
     <url-pattern>/ShowSample24a</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSubSample24</display-name>
+    <servlet-name>ShowSubSample24</servlet-name>
+    <servlet-class>ShowSubSample24</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSubSample24</servlet-name>
+    <url-pattern>/ShowSubSample24</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample25</display-name>
+    <servlet-name>ShowSample25</servlet-name>
+    <servlet-class>ShowSample25</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample25</servlet-name>
+    <url-pattern>/ShowSample25</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  	<param-name>app-name</param-name>
+  	<param-value>jsp-trial</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>app-est</param-name>
+  	<param-value>2018Nov</param-value>
+  </context-param>
 </web-app>

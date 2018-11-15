@@ -9,15 +9,14 @@
 <body>
 <%
 
-request.setCharacterEncoding("UTF-8");
 Enumeration eReq = request.getAttributeNames();
 %>
 
 <%
-out.println("<h2>リクエスト固有の情報</h2>");
+
+out.println("<h2>リクエストに設定された属性</h2>");
 while ( eReq.hasMoreElements()) {
 	String keyReq = (String) eReq.nextElement();
-
 	out.println( keyReq + "：" + request.getAttribute(keyReq) + "<br>");
 }
 

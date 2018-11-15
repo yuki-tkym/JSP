@@ -10,15 +10,13 @@
 
 
 <%
-request.setCharacterEncoding("UTF-8");
 Enumeration eSes = session.getAttributeNames();
+%>
 
-out.println("<h2>セッション固有の情報</h2>");
-while ( eSes.hasMoreElements()) {
-	String keyReq = (String) eSes.nextElement();
-
-	out.println( keyReq + "：" + request.getAttribute(keyReq) + "<br>");
-}
+<h2>セッション設定された属性情報</h2>
+<%
+String name = (String)session.getAttribute("name");
+out.println("name：" + name);
 
 %>
 </body>
