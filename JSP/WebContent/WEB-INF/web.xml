@@ -240,11 +240,31 @@
     <url-pattern>/ShowSample25</url-pattern>
   </servlet-mapping>
   <context-param>
-  	<param-name>app-name</param-name>
-  	<param-value>jsp-trial</param-value>
+    <param-name>app-name</param-name>
+    <param-value>jsp-trial</param-value>
   </context-param>
   <context-param>
-  	<param-name>app-est</param-name>
-  	<param-value>2018Nov</param-value>
+    <param-name>app-est</param-name>
+    <param-value>2018Nov</param-value>
   </context-param>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample26</display-name>
+    <servlet-name>ShowSample26</servlet-name>
+    <servlet-class>ShowSample26</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample26</servlet-name>
+    <url-pattern>/ShowSample26</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample20</display-name>
+    <servlet-name>ShowSample20</servlet-name>
+    <servlet-class>ShowSample20</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample20</servlet-name>
+    <url-pattern>/ShowSample20</url-pattern>
+  </servlet-mapping>
 </web-app>

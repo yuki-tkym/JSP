@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.Map,java.util.TreeMap" %>
 
-<% String name = "山田花子"; %>
-<% int age = 22; %>
-<% String gender = "女"; %>
-<% String region = "千葉県"; %>
+<% String name = "浜田一郎"; %>
+<% int age = 18; %>
+<% String gender = "男"; %>
+<% String region = "東京都"; %>
 <% String language = "JPN"; %>
 <%! Map<String,String> userInfo = new TreeMap<String,String>(); %>
 
@@ -20,23 +20,9 @@ userInfo.put("言語",language);
 %>
 
 
-<%!
-String setCategory(int age) {
-	String generation;
-	if((0< age) &(age < 18)) {
-		generation = "Child";
-	} else {
-		generation = "Adult";
-	}
-
-	return generation;
-}
-
-%>
-
 <body>
 
-<h3>ユーザ情報</h3>
+<h3>ユーザ2の情報</h3>
 <table border = "1">
 <% for(Map.Entry<String,String> uInfo : userInfo.entrySet()) { %>
 	<tr>
@@ -45,8 +31,5 @@ String setCategory(int age) {
 <% } %>
 </table>
 
-
-<h3>年齢カテゴリ判定</h3>
-<p><%= setCategory(age) %></p>
 </body>
 

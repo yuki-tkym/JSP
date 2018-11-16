@@ -8,11 +8,6 @@
 </head>
 <body>
 
-
-<%
-Enumeration eSes = session.getAttributeNames();
-%>
-
 <h2>セッション設定された属性情報</h2>
 <%
 String name = (String)session.getAttribute("name");
