@@ -357,4 +357,34 @@
     <servlet-name>ExPerson33</servlet-name>
     <url-pattern>/ExPerson33</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ExPerson34a</display-name>
+    <servlet-name>ExPerson34a</servlet-name>
+    <servlet-class>ExPerson34a</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExPerson34a</servlet-name>
+    <url-pattern>/ExPerson34a</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Experson34b</display-name>
+    <servlet-name>Experson34b</servlet-name>
+    <servlet-class>Experson34b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Experson34b</servlet-name>
+    <url-pattern>/Experson34b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ExPerson34b</display-name>
+    <servlet-name>ExPerson34b</servlet-name>
+    <servlet-class>ExPerson34b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExPerson34b</servlet-name>
+    <url-pattern>/ExPerson34b</url-pattern>
+  </servlet-mapping>
 </web-app>
