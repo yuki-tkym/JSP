@@ -337,4 +337,14 @@
     <servlet-name>ExeSample29</servlet-name>
     <url-pattern>/ExeSample29</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ExPerson32</display-name>
+    <servlet-name>ExPerson32</servlet-name>
+    <servlet-class>ExPerson32</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExPerson32</servlet-name>
+    <url-pattern>/ExPerson32</url-pattern>
+  </servlet-mapping>
 </web-app>
