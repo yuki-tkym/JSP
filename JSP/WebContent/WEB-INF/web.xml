@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>JSP</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -251,11 +251,15 @@
     <description></description>
     <display-name>ShowSample26</display-name>
     <servlet-name>ShowSample26</servlet-name>
-    <servlet-class>ShowSample26</servlet-class>
+    <jsp-file>/WEB-INF/jsp/sample26.jsp</jsp-file>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>java</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>ShowSample26</servlet-name>
-    <url-pattern>/ShowSample26</url-pattern>
+    <url-pattern>/servlet/ShowSample26</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -266,5 +270,51 @@
   <servlet-mapping>
     <servlet-name>ShowSample20</servlet-name>
     <url-pattern>/ShowSample20</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample27a</display-name>
+    <servlet-name>ShowSample27a</servlet-name>
+    <servlet-class>ShowSample27a</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample27a</servlet-name>
+    <url-pattern>/ShowSample27a</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample27b</display-name>
+    <servlet-name>ShowSample27b</servlet-name>
+    <servlet-class>ShowSample27b</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample27b</servlet-name>
+    <url-pattern>/ShowSample27b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample28a</display-name>
+    <servlet-name>ShowSample28a</servlet-name>
+    <servlet-class>ShowSample28a</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample28a</servlet-name>
+    <url-pattern>/ShowSample28a</url-pattern>
+  </servlet-mapping>
+  <jsp-config>
+    <taglib>
+      <taglib-uri>http:localhost:8080/tags/sample</taglib-uri>
+      <taglib-location>/WEB-INF/lib/sampletag.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample29</display-name>
+    <servlet-name>ShowSample29</servlet-name>
+    <servlet-class>ShowSample29</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample29</servlet-name>
+    <url-pattern>/ShowSample29</url-pattern>
   </servlet-mapping>
 </web-app>
