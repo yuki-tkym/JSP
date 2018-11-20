@@ -5,26 +5,33 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.Tag;
 
-public class SampleTags implements Tag{
+public class SetTitle30 implements Tag{
 
 	private PageContext pageContext;
 	private Tag parentTag;
-	private String msg;
+	private String name;
+	private String id;
 
 	@Override
 	public int doEndTag() throws JspException {
 		return EVAL_PAGE;
 	}
 
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setName(String name) {
+		this.name = name;
 	}
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 
 	@Override
 	public int doStartTag() throws JspException {
 		try {
 			JspWriter out = pageContext.getOut();
-			out.println(msg);
+			out.println("<title>" + name + "("+ id + ")</title>");
 		} catch(Exception e) {
 			throw new JspException(e.getMessage());
 		}

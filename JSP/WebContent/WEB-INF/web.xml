@@ -303,6 +303,14 @@
   </servlet-mapping>
   <jsp-config>
     <taglib>
+      <taglib-uri>http://localhost:8080/tags/sample31</taglib-uri>
+      <taglib-location>/WEB-INF/lib/titletags2.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>http://localhost:8080/tags/sample30</taglib-uri>
+      <taglib-location>/WEB-INF/lib/titletags.tld</taglib-location>
+    </taglib>
+    <taglib>
       <taglib-uri>http://localhost:8080/tags/sample</taglib-uri>
       <taglib-location>/WEB-INF/lib/sampletags.tld</taglib-location>
     </taglib>
@@ -326,6 +334,16 @@
   <servlet-mapping>
     <servlet-name>ExeTags29</servlet-name>
     <url-pattern>/ExeTags29</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample30</display-name>
+    <servlet-name>ShowSample30</servlet-name>
+    <servlet-class>ShowSample30</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample30</servlet-name>
+    <url-pattern>/ShowSample30</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -386,5 +404,15 @@
   <servlet-mapping>
     <servlet-name>ExPerson34b</servlet-name>
     <url-pattern>/ExPerson34b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample31</display-name>
+    <servlet-name>ShowSample31</servlet-name>
+    <servlet-class>ShowSample31</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample31</servlet-name>
+    <url-pattern>/ShowSample31</url-pattern>
   </servlet-mapping>
 </web-app>

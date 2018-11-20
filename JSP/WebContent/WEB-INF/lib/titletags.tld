@@ -6,15 +6,19 @@
 
 	<tlib-version>1.0</tlib-version>
 	<jsp-version>2.0</jsp-version>
-	<short-name>sample</short-name>
+	<short-name>title</short-name>
 	<tag>
-		<name>SampleTags</name>
-		<tag-class>tags.SampleTags</tag-class>
+		<name>SetTitle30</name>
+		<tag-class>tags.SetTitle30</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
-			<name>msg</name>
+			<name>name</name>
 			<required>true</required>
 			<rtexprvalue>false</rtexprvalue>
 		</attribute>
+		<attribute>
+			<name>id</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue></attribute>
 	</tag>
 </taglib>
