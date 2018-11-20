@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <!-- jbeansパッケージのPerson33を使うobj1の生成 -->
-<jsp:useBean id="obj1" scope="session" class="jbeans.Person33" />
+<jsp:useBean id="obj1" scope="session" class="jb.Person33" />
 <!-- nameセット -->
 <jsp:setProperty name ="obj1" property="name" value="takayama" />
 <body>

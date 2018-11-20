@@ -1,4 +1,4 @@
-package jbeans;
+package jb;
 
 import java.io.Serializable;
 
