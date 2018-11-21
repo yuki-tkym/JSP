@@ -415,4 +415,14 @@
     <servlet-name>ShowSample31</servlet-name>
     <url-pattern>/ShowSample31</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowSample20a</display-name>
+    <servlet-name>ShowSample20a</servlet-name>
+    <servlet-class>task.ShowSample20a</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowSample20a</servlet-name>
+    <url-pattern>/ShowSample20a</url-pattern>
+  </servlet-mapping>
 </web-app>
